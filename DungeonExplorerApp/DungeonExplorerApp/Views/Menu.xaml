@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DungeonExplorerApp.Menu">
+    
+    <StackLayout x:Name="MainLayout" Orientation="Vertical">
+        <Label FontSize="20" Text="Dungeon Explorer App of Doom"></Label>
+        <ScrollView>
+            <Label x:Name="ContentLabel" HorizontalTextAlignment="Center" Text="Here is the clicked content.. Yay!"></Label>
+        </ScrollView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0" Grid.Column="0" HorizontalOptions="FillAndExpand" x:Name="News" Text="News"></Button>
+            <Button Grid.Row="0" Grid.Column="1" HorizontalOptions="FillAndExpand" x:Name="CharactersBtn" Text="Characters"></Button>
+            <Button Grid.Row="1" Grid.Column="0" HorizontalOptions="FillAndExpand" x:Name="ForumBtn" Text="Forum"></Button>
+            <Button Grid.Row="1" Grid.Column="1" HorizontalOptions="FillAndExpand" x:Name="SupportBtn" Text="Support"></Button>
+            <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" x:Name="MarketBtn" Text="Market"></Button>
+        </Grid>
+        
+        <!--<StackLayout HorizontalOptions="FillAndExpand" x:Name="FirstRow" Orientation="Horizontal">
+            <Button HorizontalOptions="FillAndExpand" x:Name="News" Text="News"></Button>
+            <Button HorizontalOptions="FillAndExpand" x:Name="CharactersBtn" Text="Characters"></Button>
+        </StackLayout>
+        <StackLayout HorizontalOptions="FillAndExpand" x:Name="SecondRow" Orientation="Horizontal">
+            <Button HorizontalOptions="FillAndExpand" x:Name="ForumBtn" Text="Forum"></Button>
+            <Button HorizontalOptions="FillAndExpand" x:Name="SupportBtn" Text="Support"></Button>
+        </StackLayout>
+        <Button x:Name="MarketBtn" Text="Market"></Button>-->
+    </StackLayout>
+        
+</ContentPage>

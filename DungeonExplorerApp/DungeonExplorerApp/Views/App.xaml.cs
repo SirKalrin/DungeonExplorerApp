@@ -13,7 +13,8 @@ namespace DungeonExplorerApp
         {
             InitializeComponent();
 
-            MainPage = new DungeonExplorerApp.MainPage();
+            
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

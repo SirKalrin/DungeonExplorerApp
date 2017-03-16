@@ -4,31 +4,35 @@
              xmlns:dungeonExplorerApp="clr-namespace:DungeonExplorerApp;assembly=DungeonExplorerApp"
              x:Class="DungeonExplorerApp.Menu"
              Style="">
-    <ContentPage.Resources>
-        
-    </ContentPage.Resources>
 
-    <StackLayout x:Name="MainLayout" Orientation="Vertical" VerticalOptions="Start">
-        <Label Text="Dungeon Explorer App of Doom" Style="{StaticResource MenuLabelStyle}"></Label>
-        <ScrollView VerticalOptions="FillAndExpand">
-            <Label x:Name="ContentLabel" HorizontalTextAlignment="Center" Text="Here is the clicked content.. Yay!"></Label>
-        </ScrollView>
+    <!--<StackLayout x:Name="MainLayout" Orientation="Vertical">-->
+        <!--<Label Text="Dungeon Explorer App of Doom" Style="{StaticResource TitleStyle}"></Label>
+        <ScrollView VerticalOptions="Center">
+            <Label x:Name="ContentLabel" Text="Here is the clicked content.. Yay!"></Label>
+        </ScrollView>-->
         <Grid ColumnSpacing="1" RowSpacing="1" >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="4*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
             </Grid.RowDefinitions>
-            <dungeonExplorerApp:MenuLabel Content="Der er ingen nyheder idag. Der er ingen nyheder idag. Der er ingen nyheder idag. Der er ingen nyheder idag. Der er ingen nyheder idag. Der er ingen nyheder idag." Grid.Row="0" Grid.Column="0" x:Name="NewsLbl" Text="News" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Aqua" ></dungeonExplorerApp:MenuLabel>
-            <dungeonExplorerApp:MenuLabel Content="Du har ingen karakterer, taber" Grid.Row="0" Grid.Column="1" x:Name="CharactersLbl" Text="Characters" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Red"></dungeonExplorerApp:MenuLabel>
-            <dungeonExplorerApp:MenuLabel Content="Forumet er tomt" Grid.Row="1" Grid.Column="0" x:Name="ForumLbl" Text="Forum" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Olive"></dungeonExplorerApp:MenuLabel>
-            <dungeonExplorerApp:MenuLabel Content="Vi kan desværre ikke hjælpe dig med dette problem" Grid.Row="1" Grid.Column="1" x:Name="SupportLbl" Text="Support" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Lime"></dungeonExplorerApp:MenuLabel>
-            <dungeonExplorerApp:MenuLabel Content="Det blive 20$, tak" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" x:Name="MarketLbl" Text="Market" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Fuchsia"></dungeonExplorerApp:MenuLabel>
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Dungeon Explorer App of Doom" Style="{StaticResource TitleStyle}"></Label>
+            <ScrollView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" VerticalOptions="Fill" HorizontalOptions="Fill">
+                <Label x:Name="ContentLabel" Text="Here is the clicked content.. Yay!"></Label>
+            </ScrollView>
+
+            <dungeonExplorerApp:MenuLabel Content="Der er ingen nyheder idag. Der er ingen nyheder idag. Der er ingen nyheder idag. Der er ingen nyheder idag. Der er ingen nyheder idag. Der er ingen nyheder idag." Grid.Row="2" Grid.Column="0" x:Name="NewsLbl" Text="News" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Aqua" ></dungeonExplorerApp:MenuLabel>
+            <dungeonExplorerApp:MenuLabel Content="Du har ingen karakterer, taber" Grid.Row="2" Grid.Column="1" x:Name="CharactersLbl" Text="Characters" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Red"></dungeonExplorerApp:MenuLabel>
+            <dungeonExplorerApp:MenuLabel Content="Forumet er tomt" Grid.Row="3" Grid.Column="0" x:Name="ForumLbl" Text="Forum" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Olive"></dungeonExplorerApp:MenuLabel>
+            <dungeonExplorerApp:MenuLabel Content="Vi kan desværre ikke hjælpe dig med dette problem" Grid.Row="3" Grid.Column="1" x:Name="SupportLbl" Text="Support" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Lime"></dungeonExplorerApp:MenuLabel>
+            <dungeonExplorerApp:MenuLabel Content="Det blive 20$, tak" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" x:Name="MarketLbl" Text="Market" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Fuchsia"></dungeonExplorerApp:MenuLabel>
         </Grid>
-    </StackLayout>
+    <!--</StackLayout>-->
 
 </ContentPage>

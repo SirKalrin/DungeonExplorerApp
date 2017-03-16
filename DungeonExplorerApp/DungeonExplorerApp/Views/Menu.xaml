@@ -1,10 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="DungeonExplorerApp.Menu">
-    
+             x:Class="DungeonExplorerApp.Menu"
+             Style="">
+    <ContentPage.Resources>
+        
+    </ContentPage.Resources>
+
     <StackLayout x:Name="MainLayout" Orientation="Vertical">
-        <Label FontSize="20" Text="Dungeon Explorer App of Doom"></Label>
+        <Label Text="Dungeon Explorer App of Doom" Style="{StaticResource MenuLabelStyle}"></Label>
         <ScrollView>
             <Label x:Name="ContentLabel" HorizontalTextAlignment="Center" Text="Here is the clicked content.. Yay!"></Label>
         </ScrollView>
@@ -18,23 +22,12 @@
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
             </Grid.RowDefinitions>
-            
-                <Label Grid.Row="0" Grid.Column="0"  HorizontalOptions="FillAndExpand" x:Name="News" Text="News" BackgroundColor="Aqua" FontSize="24" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Style="padding = 7"></Label>
-            <Label Grid.Row="0" Grid.Column="1" HorizontalOptions="FillAndExpand" x:Name="CharactersBtn" Text="Characters" BackgroundColor="Red" FontSize="24" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
-            <Label Grid.Row="1" Grid.Column="0" HorizontalOptions="FillAndExpand" x:Name="ForumBtn" Text="Forum" BackgroundColor="Olive" FontSize="24" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
-            <Label Grid.Row="1" Grid.Column="1" HorizontalOptions="FillAndExpand" x:Name="SupportBtn" Text="Support" BackgroundColor="Lime" FontSize="24" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
-            <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" x:Name="MarketBtn" Text="Market" BackgroundColor="Fuchsia" FontSize="24" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+            <Label Grid.Row="0" Grid.Column="0" x:Name="News" Text="News" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Aqua"></Label>
+            <Label Grid.Row="0" Grid.Column="1" x:Name="CharactersBtn" Text="Characters" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Red"></Label>
+            <Label Grid.Row="1" Grid.Column="0" x:Name="ForumBtn" Text="Forum" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Olive"></Label>
+            <Label Grid.Row="1" Grid.Column="1" x:Name="SupportBtn" Text="Support" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Lime"></Label>
+            <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" x:Name="MarketBtn" Text="Market" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Fuchsia"></Label>
         </Grid>
-        
-        <!--<StackLayout HorizontalOptions="FillAndExpand" x:Name="FirstRow" Orientation="Horizontal">
-            <Button HorizontalOptions="FillAndExpand" x:Name="News" Text="News"></Button>
-            <Button HorizontalOptions="FillAndExpand" x:Name="CharactersBtn" Text="Characters"></Button>
-        </StackLayout>
-        <StackLayout HorizontalOptions="FillAndExpand" x:Name="SecondRow" Orientation="Horizontal">
-            <Button HorizontalOptions="FillAndExpand" x:Name="ForumBtn" Text="Forum"></Button>
-            <Button HorizontalOptions="FillAndExpand" x:Name="SupportBtn" Text="Support"></Button>
-        </StackLayout>
-        <Button x:Name="MarketBtn" Text="Market"></Button>-->
     </StackLayout>
-        
+
 </ContentPage>

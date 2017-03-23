@@ -29,7 +29,7 @@
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
                 </Grid.RowDefinitions>
-                <dungeonExplorerApp:MenuLabel Grid.Row="0" Grid.Column="0" x:Name="NewsLbl" Text="News" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Aqua" Content="Der er ingen nyheder idag. Der er ingen nyheder idag. Der er ingen nyheder idag. Der er ingen nyheder idag. Der er ingen nyheder idag. Der er ingen nyheder idag."></dungeonExplorerApp:MenuLabel>
+                <dungeonExplorerApp:MenuLabel Grid.Row="0" Grid.Column="0" x:Name="NewsLbl" Text="News" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Aqua" Content=""></dungeonExplorerApp:MenuLabel>
                 <dungeonExplorerApp:MenuLabel Grid.Row="0" Grid.Column="1" x:Name="CharactersLbl" Text="Characters" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Red" Content="Du har ingen karakterer, taber"></dungeonExplorerApp:MenuLabel>
                 <dungeonExplorerApp:MenuLabel Grid.Row="1" Grid.Column="0" x:Name="ForumLbl" Text="Forum" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Olive" Content="Forumet er tomt"></dungeonExplorerApp:MenuLabel>
                 <dungeonExplorerApp:MenuLabel Grid.Row="1" Grid.Column="1" x:Name="SupportLbl" Text="Support" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Lime" Content="Vi kan desværre ikke hjælpe dig med dette problem"></dungeonExplorerApp:MenuLabel>

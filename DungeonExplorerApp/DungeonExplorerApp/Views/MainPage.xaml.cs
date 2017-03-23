@@ -12,6 +12,7 @@ namespace DungeonExplorerApp
         public MainPage()
         {
             InitializeComponent();
+            Title = "Dungeon Explorer App";
             Navigation.PushAsync(new Menu());
         }
     }

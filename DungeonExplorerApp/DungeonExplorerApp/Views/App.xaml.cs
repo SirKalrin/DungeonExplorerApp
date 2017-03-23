@@ -14,10 +14,10 @@ namespace DungeonExplorerApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage() {Title = "Dungeon Explorer App"})
+            MainPage = new NavigationPage(new Menu() /*{ Title = "Menu" }*/)
             {
-                BarBackgroundColor = Color.Pink,
-                BarTextColor = Color.Yellow
+                BarBackgroundColor = Color.Black,
+                BarTextColor = Color.Yellow,
             };
         }
 

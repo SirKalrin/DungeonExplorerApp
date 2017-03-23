@@ -14,9 +14,8 @@ namespace DungeonExplorerApp
     {
         public Menu()
         {
-            InitializeComponent();
+            InitializeComponent();       
             InitializeEventhandlers(GetLabels());
-
         }
 
         private List<MenuLabel> GetLabels()

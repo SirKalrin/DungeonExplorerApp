@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace DungeonExplorerApp
 {
@@ -13,8 +14,11 @@ namespace DungeonExplorerApp
         {
             InitializeComponent();
 
-            
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new MainPage() {Title = "Dungeon Explorer App"})
+            {
+                BarBackgroundColor = Color.Pink,
+                BarTextColor = Color.Yellow
+            };
         }
 
         protected override void OnStart()

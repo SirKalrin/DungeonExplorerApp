@@ -27,6 +27,11 @@ namespace DungeonExplorerApp
             return _instance ?? (_instance = new DungeonExplorerDB());
         }
 
+        public void ResetIdIncrement()
+        {
+            _connection.CreateCommand("ALTER TABLE tablename AUTO_INCREMENT = 1");
+        }
+
         public IEnumerable<MenuData> GetMenuData()
         {
             return (from t in _connection.Table<MenuData>() select t).ToList();

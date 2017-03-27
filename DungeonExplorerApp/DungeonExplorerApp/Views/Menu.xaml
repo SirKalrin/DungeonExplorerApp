@@ -15,7 +15,7 @@
                 <RowDefinition Height="6*"></RowDefinition>
                 <RowDefinition Height="4*"></RowDefinition>
             </Grid.RowDefinitions>
-            
+
             <ScrollView Grid.Row="0" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="Fill" BackgroundColor="#333333">
                 <Label x:Name="ContentLabel" Text="Here is the clicked content.. Yay!" TextColor="#f5f5f5"></Label>
             </ScrollView>
@@ -29,11 +29,11 @@
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
                 </Grid.RowDefinitions>
-                <dungeonExplorerApp:MenuLabel Grid.Row="0" Grid.Column="0" x:Name="NewsLbl" Text="News" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Aqua" Content=""></dungeonExplorerApp:MenuLabel>
-                <dungeonExplorerApp:MenuLabel Grid.Row="0" Grid.Column="1" x:Name="CharactersLbl" Text="Characters" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Red" Content="Du har ingen karakterer, taber"></dungeonExplorerApp:MenuLabel>
-                <dungeonExplorerApp:MenuLabel Grid.Row="1" Grid.Column="0" x:Name="ForumLbl" Text="Forum" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Olive" Content="Forumet er tomt"></dungeonExplorerApp:MenuLabel>
-                <dungeonExplorerApp:MenuLabel Grid.Row="1" Grid.Column="1" x:Name="SupportLbl" Text="Support" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Lime" Content="Vi kan desværre ikke hjælpe dig med dette problem"></dungeonExplorerApp:MenuLabel>
-                <dungeonExplorerApp:MenuLabel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" x:Name="MarketLbl" Text="Market" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Fuchsia" Content="Det blive 20$, tak"></dungeonExplorerApp:MenuLabel>
+                <dungeonExplorerApp:MenuLabel Grid.Row="0" Grid.Column="0" x:Name="NewsLbl" Text="News" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Aqua"></dungeonExplorerApp:MenuLabel>
+                <dungeonExplorerApp:MenuLabel Grid.Row="0" Grid.Column="1" x:Name="CharactersLbl" Text="Characters" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Red"></dungeonExplorerApp:MenuLabel>
+                <dungeonExplorerApp:MenuLabel Grid.Row="1" Grid.Column="0" x:Name="ForumLbl" Text="Forum" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Olive"></dungeonExplorerApp:MenuLabel>
+                <dungeonExplorerApp:MenuLabel Grid.Row="1" Grid.Column="1" x:Name="SupportLbl" Text="Support" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Lime"></dungeonExplorerApp:MenuLabel>
+                <dungeonExplorerApp:MenuLabel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" x:Name="MarketLbl" Text="Market" Style="{StaticResource MenuLabelStyle}" BackgroundColor="Fuchsia"></dungeonExplorerApp:MenuLabel>
             </Grid>
         </Grid>
     </StackLayout>
